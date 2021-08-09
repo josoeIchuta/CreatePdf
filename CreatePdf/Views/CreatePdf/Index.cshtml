@@ -1,0 +1,24 @@
+﻿<style>
+    #viewContent {
+        border-top: solid 2px #CCC;
+    }
+
+        #viewContent h3 {
+            border-bottom: none;
+        }
+</style>
+@{ ViewBag.Title = "Create a PDF File using iTextSharp in ASP.NET MVC";}
+<h1>Create a PDF File using iTextSharp in ASP.NET MVC</h1>
+<h2>
+    <a href="http://www.yogihosting.com/create-pdf-asp-net-mvc/">Read the tutorial on YogiHosting » </a>
+    @using (Html.BeginForm("Reset", "CreatePdf"))
+    {
+        <button id="reset">Reset »</button>
+    }
+</h2>
+<div id="viewContent">
+    @using (Html.BeginForm("Index", "CreatePdf"))
+            {
+        <button id="submitButton" type="submit">Create Pdf</button>
+    }
+</div>
